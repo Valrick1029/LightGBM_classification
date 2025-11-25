@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: my_model_api
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models     # чтобы подменять модели без пересборки
+      - ./logs:/app/logs         # если есть логирование
+    environment:
+      - ENV=production
+      - MODEL_PATH=/app/models/final_model.pkl

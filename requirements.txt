@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+lightgbm
+joblib
+fastapi
+uvicorn[standard]
+pydantic
+scipy
+matplotlib
+seaborn
+psutil
+requests
+loguru
+prometheus-client
+pyyaml
