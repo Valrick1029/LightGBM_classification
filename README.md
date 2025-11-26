@@ -27,6 +27,11 @@ project/
 │   ├── model_drift.py         # анализ метрик модели
 │   └── generate_report.py     # отчёты и графики
 │
+├── models/
+│   ├── final_model.pkl        # сохранённая модель
+│   ├── features.pkl           # список фичей
+│   └── model_params.pkl       # параметры модели
+│
 ├── Dockerfile                 # основной docker-файл
 ├── docker-compose.yaml        # docker-compose
 ├── requirements.txt           # зависимости
